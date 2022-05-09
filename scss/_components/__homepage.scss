@@ -1,0 +1,430 @@
+.about {
+    .site--header-left {
+        position: relative;
+        margin-left: 35px;
+        .about__left {
+            img {
+                border-radius: 15px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        .about__left__{
+            position: absolute;
+        }
+        .shape-01 {
+            top: 125px;
+            left: -100px;
+        }
+        .shape-02{
+            right: 45px;
+            bottom: -54px;
+        }
+    }
+    .about__block {
+        .site--header-right {
+            .site--header--top {
+                display: flex;
+                align-items: end;
+                img {
+                    height: 22px;
+                    width: auto;
+                    margin-right: 12px;
+                }
+                h6 {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: $orange;
+                    letter-spacing: 0.1666666667em;
+                    font-size: 12px;
+                }
+            }
+            h2 {
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+            p {
+                margin: 0;
+                margin-bottom: 1.5rem;
+                font-size: 16px;
+                span {
+                    color: $blue;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                }
+            }
+            margin-right: 0.6px;
+        }
+    }
+}
+
+// features
+
+.feature {
+    .feature__block {
+        background: $white;
+        padding: 2.5rem 2.375rem 2.5rem;
+        border-radius: 5px;
+        margin: 0;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        transition: transform 0.25s ease;
+    }
+    img {
+        width: 60px;
+        margin-bottom: 8px;
+    }
+    h4 {
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+    p {
+        margin: 0;
+        font-size: 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+.interest {
+    position: relative;
+    background: linear-gradient(0deg, rgba(22, 61, 102, 0.8), rgba(22, 61, 102, 0.8)),
+        url(../../img/banner.jpeg) center center no-repeat;
+    padding: 80px 0;
+    background-size: cover;
+    background-color: transparent;
+    background-attachment: fixed;
+    text-align: center;
+    .interest-block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h2 {
+            color: $white;
+            font-weight: bold;
+            font-size: 34px;
+        }
+        .whole-button {
+            color: $white;
+            border: 2px solid $white;
+            border-radius: 4px;
+            text-transform: capitalize;
+            &:hover {
+                background: $orange;
+            }
+        }
+    }
+}
+
+.message {
+    .message__image {
+        display: flex;
+        justify-content: center;
+        img {
+            width: auto;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .message__content {
+        > span {
+            font-size: 24px;
+        }
+        .message__block {
+            padding-left: 25px;
+            h6 {
+                font-size: 18px;
+                font-weight: normal;
+            }
+            span {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.faq {
+    .faq__block {
+        background: $white;
+        box-shadow: 0 0.3125rem 1.5625rem 0 rgba(32, 78, 141, 0.08);
+        border-radius: 0.625rem;
+        margin: 0 0 1.875rem;
+        .accordion-title {
+            position: relative;
+            margin: 0;
+            padding: 1.25rem 1.5625rem 1.25rem 4.0625rem;
+            font-size: 20px;
+            font-weight: normal;
+            color: $blue;
+            cursor: pointer;
+            transition: all 0.6s ease-in-out;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 1.5625rem;
+                margin-top: -0.125rem;
+                width: 1.0125rem;
+                border-bottom: 0.1875rem solid $blue;
+                transition: all 0.6s ease-in-out;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 2rem;
+                margin-top: -0.5625rem;
+                height: 1.0125rem;
+                border-right: 0.1875rem solid $blue;
+                transition: all 0.6s ease-in-out;
+            }
+            &.open {
+                &::before {
+                    border-color: $orange;
+                    transform: rotate(180deg);
+                }
+                &::after {
+                    opacity: 0;
+                }
+            }
+        }
+        .accordion-content {
+            padding: 0.3125rem 4.0625rem 2.25rem;
+        }
+    }
+}
+
+.quote {
+    background: linear-gradient(0deg, rgba(22, 61, 102, 0.8), rgba(22, 61, 102, 0.8)),
+        url(../../img/banner.jpeg) center center no-repeat;
+    padding: 80px 0;
+    background-size: cover;
+    background-color: transparent;
+    background-attachment: fixed;
+    text-align: center;
+    h2 {
+        color: $white;
+        font-weight: bold;
+        font-size: 34px;
+        margin-bottom: 1.2rem;
+    }
+    h5 {
+        color: $white;
+    }
+}
+
+.testimonials {
+    position: relative;
+    .testimonials__wrap {
+        padding: 0 10rem;
+        .testiContentArea {
+            background: $white;
+            box-shadow: 0 1.875rem 3.75rem 0 rgba(18, 57, 115, 0.09);
+            text-align: center;
+            padding: 3.75rem;
+            position: relative;
+            > svg {
+                position: absolute;
+                width: 4.0625rem;
+                fill: #f4f3fc;
+                height: auto;
+                &.quote-left {
+                    top: -0.4375rem;
+                    left: 1.875rem;
+                    transform: rotate(180deg);
+                }
+                &.quote-right {
+                    bottom: -0.4375rem;
+                    right: 1.875rem;
+                }
+            }
+            .testimonial__slider {
+                position: relative;
+                display: block;
+                .testi-item {
+                    p {
+                        margin: 0 0 0.5rem;
+                        font-style: italic;
+                        letter-spacing: 1px;
+                    }
+                    h6 {
+                        color: $orange;
+                    }
+                }
+                .owl-nav {
+                    position: absolute;
+                    left: 50%;
+                    bottom: -30px;
+                    i {
+                        font-size: 32px;
+                        color: $paragraph;
+                        cursor: pointer;
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog {
+    .blog-box {
+        background: $white;
+        box-shadow: 0 0.3125rem 1.5625rem 0 rgba(32, 78, 141, 0.08);
+        border-radius: 4px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        transition: all 0.6s ease-in-out;
+        .blog-img {
+            overflow: hidden;
+            position: relative;
+            a {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    background: rgba(0, 0, 0, 0.1);
+                    transition: all 0.6s ease-in-out;
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .blog-des-box {
+            padding: 15px;
+            .blog-date {
+                margin: 0;
+                padding: 6px 0;
+                li {
+                    display: inline-block;
+                    padding: 0px 15px;
+                    margin: 0;
+                    position: relative;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+            p {
+                margin: 0;
+                padding: 6px 0 12px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// footer
+/*____________footer____________*/
+.footer {
+    padding: 50px 0 0px;
+    margin-top: 154px;
+    background-color: $blue;
+    position: relative;
+}
+.footer .svg-footer {
+    position: absolute;
+    top: -161px;
+    width: 100%;
+}
+.footer .footer-img {
+    height: 90px;
+    width: auto;
+}
+.footer .footer-text p {
+    color: #ffe8e8;
+    font-size: 16px;
+    margin-top: 12px;
+}
+.footer .foot-head {
+    margin-bottom: 22px;
+}
+.footer .foot-head h3 {
+    color: #fff;
+    font-size: 20px;
+}
+.footer ul {
+    padding: 0;
+    margin: 0;
+}
+.footer ul li {
+    margin-bottom: 6px;
+}
+
+.footer ul li a {
+    color: #ffe8e8;
+    font-size: 16px;
+}
+.footer .nav-list- .big span:before {
+    content: "\f095";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    margin-right: 8px;
+}
+.footer .nav-list- .adress span:before {
+    content: "\f041 ";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    margin-right: 8px;
+}
+.footer .nav-list- .work-schedule span:before {
+    content: "\f017  ";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    margin-right: 8px;
+}
+.footer .big span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer span {
+    color: #ffe8e8;
+    font-size: 16px;
+}
+
+.footer-aside {
+    padding: 0 0 8px;
+    color: #fff;
+}
+.footer-aside p {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+}
+.footer .social-list {
+    font-size: 18px;
+    float: right;
+}
+.footer hr {
+    color: #fff;
+}
+.footer .social-list li {
+    display: inline-block;
+}
+.footer .social-list > * {
+    margin: 0;
+    margin-left: 18px;
+}
+.social-list li a,
+.social-list li a:focus,
+.social-list li a:active {
+    color: #989cac;
+}

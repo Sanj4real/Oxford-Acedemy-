@@ -1,0 +1,87 @@
+.slider {
+    .slider__wrap {
+        position: relative;
+        .item {
+            height: 75vh;
+            width: auto;
+            &.item--1 {
+                background: url("../../img/slider/4.jpg") no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            &.item--2 {
+                background: url("../../img/slider/5.jpg") no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            &.item--3 {
+                background: url("../../img/slider/6.jpg") no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .slider__content {
+                height: 100%;
+                width: 50%;
+                background: linear-gradient(0deg, rgba(22, 61, 102, 0.8), rgba(22, 61, 102, 0.8));
+                padding: 14rem 0rem 0 8rem;
+                h1 {
+                    color: $white;
+                    margin-bottom: 0.3rem;
+                }
+                p {
+                    color: $white;
+                    margin: 0;
+                    margin-bottom: 0.5rem;
+                }
+                .site-btn {
+                    padding: 0.844rem 2.5rem;
+                    font-size: 1.125rem;
+                    border-radius: 3.75rem;
+                    min-width: 8.75rem;
+                    color: $white;
+                    border: none;
+                    background: $orange;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    position: relative;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        background: $white;
+                        color: $orange;
+                    }
+                }
+            }
+        }
+        .owl-nav {
+            margin: 0;
+            button {
+                position: absolute;
+                top: 50%;
+                background-color: $blue;
+                color: $white;
+                margin: 0;
+                padding: 6px 12px !important;
+                font-size: 32px !important;
+                transition: all 0.3s ease-in-out;
+                &.owl-prev{
+                    left: 0;
+                }
+                &.owl-next{
+                    right: 0;
+                }
+            }
+        }
+        .owl-nav button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.38) !important;
+        }
+        
+        .owl-nav button:focus {
+            outline: none;
+        }
+    }
+}
+
+

@@ -1,0 +1,119 @@
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+        padding: 20px 15px ;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25), inset 0 4px 0 $orange;
+        li{
+            margin-bottom: 0;
+            a{
+                color: $orange;
+                background: transparent;
+                font-size: 16px;
+            }
+        }
+       
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+        a{
+            padding: 0;
+        }
+    }
+}
+/* ============ desktop view .end// ============ */
+
+header {
+    position: relative;
+    .header__top {
+        padding: 6px 0;
+        background-color: $orange;
+        .header__top__block {
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    margin: 0;
+                    margin-right: 12px;
+                    i {
+                        color: $white;
+                    }
+                    a {
+                        color: $white;
+                        &:hover {
+                            color: $blue;
+                        }
+                        i {
+                            color: $white;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            &.header--top--social {
+                text-align: right;
+            }
+        }
+    }
+    .header__bottom {
+        transition: all .3s ease-in-out;
+        nav {
+            padding: 0;
+            .header__logo {
+                padding: 6px 6px 0 0;
+                img {
+                    height: 75px;
+                    width: auto;
+                    object-fit: contain;
+                }
+            }
+            #main_nav {
+                > ul {
+                    margin-left: auto;
+                    > li {
+                        margin: 0;
+                        margin-right: 12px;
+                        a {
+                            color: $black;
+                            padding: 26px 16px 26px 0;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            &:hover{
+                                color: $orange;
+                            }
+                        }
+                        ul{
+                            padding: 0;
+                            li{
+                                a{
+                                    padding: .5625rem .375rem .5625rem .875rem;
+                                    font-size: .9375rem;
+                                    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+                                }
+                            }
+                        }
+                        &.active {
+                            a {
+                                color: $orange;
+                            }
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                            a{
+                                padding: 26px 16px 26px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
